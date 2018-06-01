@@ -31,7 +31,10 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 				- Investigate how Aragon handle packaging
 					- Investigate if we should use Lerna to manage it
 					
-	- __done__ Modify migration file to deploy ENS and DNSResolver into ganache
+	- __here__ Modify migration file to deploy ENS and DNSResolver into ganache
+		- __done__ changed migration file to set only dummy algo/digest and integration tests are start failing.
+		- claim to registrar with proof
+			- __here__ keep getting `Error: Given parameter is not bytes: "_ensmatokenxyz,"` errors when trying to send with `registrar.methods.claim(dns.hexEncodeName("_ens.matoken.xyz."), proof).send();` using web3 1.0
 	- Try to register using Truffle interface
 	- Define interface to set ownership.
 		- Should dnsprove-js wrap resolver and ens as well?
