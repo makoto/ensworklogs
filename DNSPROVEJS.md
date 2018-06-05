@@ -31,12 +31,12 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 				- Investigate how Aragon handle packaging
 					- Investigate if we should use Lerna to manage it
 					
-	- __here__ Modify migration file to deploy ENS and DNSResolver into ganache
+	- __done__ Modify migration file to deploy ENS and DNSResolver into ganache
 		- __done__ changed migration file to set only dummy algo/digest and integration tests are start failing.
-		- claim to registrar with proof
-			- __here__ keep getting `Error: Given parameter is not bytes: "_ensmatokenxyz,"` errors when trying to send with `registrar.methods.claim(dns.hexEncodeName("_ens.matoken.xyz."), proof).send();` using web3 1.0
-	- Try to register using Truffle interface
-	- Define interface to set ownership.
+		- __done__ claim to registrar with proof
+			- __done__ keep getting `Error: Given parameter is not bytes: "_ensmatokenxyz,"` errors when trying to send with `registrar.methods.claim(dns.hexEncodeName("_ens.matoken.xyz."), proof).send();` using web3 1.0 => Had to pass everything as hex which I didin't for proof.
+			__ __done__ getting `revert` => it was for 2 reasons. first, root tld had to be changed from `test` to `xyz`, and second proof rrdata had to contain `a=address` where address is the contract owner of the address which is claiming the domain for. 
+	- __here__ Define interface to set ownership.
 		- Should dnsprove-js wrap resolver and ens as well?
 -  __WIP__ Writing Unit tests
 	- Investigate better way to  mock calls to smart contract
