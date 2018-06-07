@@ -38,8 +38,8 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 			__ __done__ getting `revert` => it was for 2 reasons. first, root tld had to be changed from `test` to `xyz`, and second proof rrdata had to contain `a=address` where address is the contract owner of the address which is claiming the domain for. 
 	- Define interface to set ownership.
 		- Make separate npm library for dnsregistrar (separate from smart contract)
-		- Convert current integration test from jest to truffle to remove contract address dependencies
-			- __here__ currently getting problem of using web3 1.0 (to decouple library from truffle) within truffle test environment (web3 1.0 method calls is returning empty value for some reason)
+		- __done__ Convert current integration test from jest to truffle to remove contract address dependencies
+			- __done__ currently getting problem of using web3 1.0 (to decouple library from truffle) within truffle test environment (web3 1.0 method calls is returning empty value for some reason) => The problem was more about `truffle test` not running migration properly so contract was empty. Updated README to avoid same problem happending.
 		- Include dnsprover into dnsregistrar
 -  __WIP__ Writing Unit tests
 	- Investigate better way to  mock calls to smart contract
@@ -50,4 +50,6 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 	- Investigate the best way to transpile to work in both browser and node.
         - publish
 - __WIP__ Try it out
-	- Create a simple web front end to test.
+	- __done__ Create a simple web front end to DNS lookup
+	- __done__ Create a simple web front end to DNS Oracle lookup
+	- __here__ Create a simple web front end to submit proof
