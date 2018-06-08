@@ -40,7 +40,7 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 		- Make separate npm library for dnsregistrar (separate from smart contract)
 		- __done__ Convert current integration test from jest to truffle to remove contract address dependencies
 			- __done__ currently getting problem of using web3 1.0 (to decouple library from truffle) within truffle test environment (web3 1.0 method calls is returning empty value for some reason) => The problem was more about `truffle test` not running migration properly so contract was empty. Updated README to avoid same problem happending.
-		- Include dnsprover into dnsregistrar
+		- __here__ Include dnsprover into dnsregistrar
 -  __WIP__ Writing Unit tests
 	- Investigate better way to  mock calls to smart contract
 	- Investigate what is the good way to test recursive calls.
@@ -52,4 +52,5 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 - __WIP__ Try it out
 	- __done__ Create a simple web front end to DNS lookup
 	- __done__ Create a simple web front end to DNS Oracle lookup
-	- __here__ Create a simple web front end to submit proof
+	- __done__ Create a simple web front end to submit proof
+	-  Create a simple web front end to claim ownership
