@@ -10,7 +10,6 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 - Testing recursive function calls are hard.
 - I may still not fully understanding the whole flow.
 - Working with wrong hex and binaries are hard
-- Getting some npm dependency issues.
 
 ## Logs
 
@@ -47,6 +46,7 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 	- Investigate if I can separate out the flow logic from actual validation of signatures, etc
 - __WIP__ Publish as a library 
 	- __done__ use browserify and babelify to bundle js
+	- __done__ Fix problem on Truffle not handling pacakge with namespace
 	- Investigate the best way to transpile to work in both browser and node.
         - publish
 - __WIP__ Try it out
