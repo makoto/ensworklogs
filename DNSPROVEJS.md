@@ -49,8 +49,8 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 	- __done__ Fix problem on Truffle not handling pacakge with namespace
 	- Investigate the best way to transpile to work in both browser and node.
         - publish
-- __WIP__ Try it out
+- __done__ Try it out
 	- __done__ Create a simple web front end to DNS lookup
 	- __done__ Create a simple web front end to DNS Oracle lookup
 	- __done__ Create a simple web front end to submit proof
-	-  Create a simple web front end to claim ownership
+	- __done__ Create a simple web front end to claim ownership
