@@ -41,9 +41,10 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 			- __done__ currently getting problem of using web3 1.0 (to decouple library from truffle) within truffle test environment (web3 1.0 method calls is returning empty value for some reason) => The problem was more about `truffle test` not running migration properly so contract was empty. Updated README to avoid same problem happending.
 		- __here__ Include dnsprover into dnsregistrar
 			- __done__ decide wrapper API interface
-			- create batch API inside dnsprover which returns the list of unproven transactions
+			- __done__ create batch API inside dnsprover which returns the list of unproven transactions
 				- Add test
 					- __done__ Refactor test on dnsprover integration to be able to run multiple tests
+			- __here__ integrate with the batch API
 -  __WIP__ Writing Unit tests
 	- Investigate better way to  mock calls to smart contract
 	- Investigate what is the good way to test recursive calls.
