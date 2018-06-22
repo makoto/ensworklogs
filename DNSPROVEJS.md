@@ -61,3 +61,6 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 	- __done__ Create a simple web front end to DNS Oracle lookup
 	- __done__ Create a simple web front end to submit proof
 	- __done__ Create a simple web front end to claim ownership
+- __WIP__ Submit proofs in one batch
+	-- Check changes in dnssecoracle and dnsregstrar
+	-- Create new function to submit in one function
