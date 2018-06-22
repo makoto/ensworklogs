@@ -53,6 +53,9 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 		- __done__ Fix name space issue
 	- __done__ Publish dnsregistrar as a npm package
 	- __here__ Publish dnsprove as a npm package
+		- Install ndsprove into separate project and make sure it works
+		- Try out submitting proof as address owner
+		- Try out submitting proof as non address owner
 - __done__ Try it out
 	- __done__ Create a simple web front end to DNS lookup
 	- __done__ Create a simple web front end to DNS Oracle lookup
