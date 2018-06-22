@@ -26,9 +26,7 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 - it claims domain via dnsresolver
 	-  __done__ Includes dnsresolver into dnsprove-js
 		- __done__ Make dnsresolver as a npm module
-			-  __WIP__ Decide on module name (should we prepend "@ensdomains" which is causing a problem on truffle?
-				- Investigate how Aragon handle packaging
-					- Investigate if we should use Lerna to manage it
+			-  __done__ Decide on module name (should we prepend "@ensdomains" which is causing a problem on truffle?
 					
 	- __done__ Modify migration file to deploy ENS and DNSResolver into ganache
 		- __done__ changed migration file to set only dummy algo/digest and integration tests are start failing.
@@ -44,7 +42,7 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 			- __done__ create batch API inside dnsprover which returns the list of unproven transactions
 				- Add test
 					- __done__ Refactor test on dnsprover integration to be able to run multiple tests
-			- __here__ integrate with the batch API
+			- __done__ integrate with the batch API
 -  __WIP__ Writing Unit tests
 	- Investigate better way to  mock calls to smart contract
 	- Investigate what is the good way to test recursive calls.
@@ -52,8 +50,9 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 - __WIP__ Publish as a library 
 	- __done__ use browserify and babelify to bundle js
 	- __done__ Fix problem on Truffle not handling pacakge with namespace
-	- Investigate the best way to transpile to work in both browser and node.
-        - publish
+		- __done__ Fix name space issue
+	- __done__ Publish dnsregistrar as a npm package
+	- __here__ Publish dnsprove as a npm package
 - __done__ Try it out
 	- __done__ Create a simple web front end to DNS lookup
 	- __done__ Create a simple web front end to DNS Oracle lookup
