@@ -64,3 +64,4 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 - __WIP__ Submit proofs in one batch
 	-- Check changes in dnssecoracle and dnsregstrar
 	-- Create new function to submit in one function
+- __here__ Allow anyone to be ablet to submit claim
