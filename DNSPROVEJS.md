@@ -37,7 +37,7 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 		- Make separate npm library for dnsregistrar (separate from smart contract)
 		- __done__ Convert current integration test from jest to truffle to remove contract address dependencies
 			- __done__ currently getting problem of using web3 1.0 (to decouple library from truffle) within truffle test environment (web3 1.0 method calls is returning empty value for some reason) => The problem was more about `truffle test` not running migration properly so contract was empty. Updated README to avoid same problem happending.
-		- __here__ Include dnsprover into dnsregistrar
+		- __done__ Include dnsprover into dnsregistrar
 			- __done__ decide wrapper API interface
 			- __done__ create batch API inside dnsprover which returns the list of unproven transactions
 				- Add test
@@ -52,10 +52,24 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 	- __done__ Fix problem on Truffle not handling pacakge with namespace
 		- __done__ Fix name space issue
 	- __done__ Publish dnsregistrar as a npm package
-	- __here__ Publish dnsprove as a npm package
+	- __done__ Publish dnsprove as a npm package
 		- Install ndsprove into separate project and make sure it works
 		- Try out submitting proof as address owner
 		- Try out submitting proof as non address owner
+	- Setup travis on dnsprovejs
+	 - Fix failed test
+	- Setup travis on dnsregistrar
+	- __here__ Address PR on dnsprovejs
+		- Add more detailed API doc (proof.rrsig, proof.signature, proof.error, proof.unproven, proofs.error)
+		- [Replace dnssec-oracle/lib/dns.js to dns-packet](https://github.com/ensdomains/dnsprovejs/pull/1/files#r197846357)
+		- Add https://github.com/prettier/prettier
+		- [check if the name doesn't end with '.', not if it's literally just '.'.](https://github.com/ensdomains/dnsprovejs/pull/1/files#r197848036)
+		- Replace `console.warn('Failed to verify RRSET');` with something better.
+		- Rename from numTransactions to transactionCount
+	- Address PR on dnsregistrar
+		- Add https://github.com/prettier/prettier
+		- Rename from numTransactions to transactionCount
+		- At `new DNSRegistrarJs(provider, dnssecaddress, dnsregistraraddress);` obtain dnssecaddress via registrar.
 - __done__ Try it out
 	- __done__ Create a simple web front end to DNS lookup
 	- __done__ Create a simple web front end to DNS Oracle lookup
@@ -64,4 +78,4 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 - __WIP__ Submit proofs in one batch
 	-- Check changes in dnssecoracle and dnsregstrar
 	-- Create new function to submit in one function
-- __here__ Allow anyone to be ablet to submit claim
+- __done__ Allow anyone to be ablet to submit claim
