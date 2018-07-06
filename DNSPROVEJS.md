@@ -56,26 +56,27 @@ DNSPROVE allows users to query dns record and send the proof to DNSOracle so tha
 		- Install ndsprove into separate project and make sure it works
 		- Try out submitting proof as address owner
 		- Try out submitting proof as non address owner
-	- Setup travis on dnsprovejs
-	 - Fix failed test
-	- Setup travis on dnsregistrar
-	- __here__ Address PR on dnsprovejs
-		- Add more detailed API doc (proof.rrsig, proof.signature, proof.error, proof.unproven, proofs.error)
-		- [Replace dnssec-oracle/lib/dns.js to dns-packet](https://github.com/ensdomains/dnsprovejs/pull/1/files#r197846357)
+	- __done__ Setup travis on dnsprovejs
+	  - __done__ Fix failed test
+	- __done__ Setup travis on dnsregistrar
+	- __done__ Address PR on dnsprovejs
+		- __done__ Add more detailed API doc (proof.rrsig, proof.signature, proof.error, proof.unproven, proofs.error)
+		- __done__ [Replace dnssec-oracle/lib/dns.js to dns-packet](https://github.com/ensdomains/dnsprovejs/pull/1/files#r197846357)
 		- Add https://github.com/prettier/prettier
-		- [check if the name doesn't end with '.', not if it's literally just '.'.](https://github.com/ensdomains/dnsprovejs/pull/1/files#r197848036)
-		- Replace `console.warn('Failed to verify RRSET');` with something better.
-		- Rename from numTransactions to transactionCount
+		- __done__ [check if the name doesn't end with '.', not if it's literally just '.'.](https://github.com/ensdomains/dnsprovejs/pull/1/files#r197848036)
+		- __done__ Replace `console.warn('Failed to verify RRSET');` with something better.
 	- Address PR on dnsregistrar
-		- Add https://github.com/prettier/prettier
-		- Rename from numTransactions to transactionCount
-		- At `new DNSRegistrarJs(provider, dnssecaddress, dnsregistraraddress);` obtain dnssecaddress via registrar.
+		- __done__ Add https://github.com/prettier/prettier
+		- __done__ Rename from numTransactions to transactionCount
+		- __done__ At `new DNSRegistrarJs(provider, dnssecaddress, dnsregistraraddress);` obtain dnssecaddress via registrar.
 - __done__ Try it out
 	- __done__ Create a simple web front end to DNS lookup
 	- __done__ Create a simple web front end to DNS Oracle lookup
 	- __done__ Create a simple web front end to submit proof
 	- __done__ Create a simple web front end to claim ownership
 - __WIP__ Submit proofs in one batch
-	-- Check changes in dnssecoracle and dnsregstrar
-	-- Create new function to submit in one function
+	- __done__ Check changes in dnssecoracle and dnsregstrar
+	- __done__ Create new function to submit in one function
+	- Raise Pull Request
 - __done__ Allow anyone to be ablet to submit claim
+- __here__ Allow users to delete RRS
